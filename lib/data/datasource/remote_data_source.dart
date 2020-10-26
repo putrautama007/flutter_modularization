@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_modularization/network/api_constant.dart';
-import 'package:flutter_modularization/network/restaurant_list_model.dart';
+import 'package:flutter_modularization/data/model/api_constant.dart';
+import 'package:flutter_modularization/data/model/restaurant_list_model.dart';
 
 abstract class RemoteDataSource {
   Future<RestaurantListModel> getRestaurantList();

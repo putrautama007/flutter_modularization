@@ -1,20 +1,20 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_modularization/common/custom_colors.dart';
-import 'package:flutter_modularization/common/custom_screen_utils.dart';
-import 'package:flutter_modularization/common/image_strings.dart';
-import 'package:flutter_modularization/network/api_constant.dart';
-import 'package:flutter_modularization/network/get_list_restaurant_use_case.dart';
-import 'package:flutter_modularization/network/remote_data_source.dart';
-import 'package:flutter_modularization/network/restaurant_repository.dart';
-import 'package:flutter_modularization/ui/restaurant_card.dart';
+import 'package:flutter_modularization/data/repository/restaurant_repository_impl.dart';
+import 'package:flutter_modularization/domain/usecase/get_list_restaurant_use_case.dart';
+import 'package:flutter_modularization/external/custom_colors.dart';
+import 'package:flutter_modularization/external/custom_screen_utils.dart';
+import 'package:flutter_modularization/external/image_strings.dart';
+import 'package:flutter_modularization/data/model/api_constant.dart';
+import 'package:flutter_modularization/data/datasource/remote_data_source.dart';
+import 'package:flutter_modularization/presentation/bloc/get_list_restaurant_event.dart';
+import 'package:flutter_modularization/presentation/bloc/get_list_restaurant_state.dart';
+import 'package:flutter_modularization/presentation/widget/card/restaurant_card.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'custom_error_widget.dart';
-import 'custom_loading_progress.dart';
-import 'get_list_restaurant_bloc.dart';
-import 'get_list_restaurant_event.dart';
-import 'get_list_restaurant_state.dart';
+import '../widget/error/custom_error_widget.dart';
+import '../widget/loading/custom_loading_progress.dart';
+import '../bloc/get_list_restaurant_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
 

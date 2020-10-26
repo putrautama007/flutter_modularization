@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_modularization/network/restaurant_list_entity.dart';
+import 'package:flutter_modularization/domain/entity/restaurant_list_entity.dart';
 
 abstract class GetListRestaurantState extends Equatable {
   const GetListRestaurantState();

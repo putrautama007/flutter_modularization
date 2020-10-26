@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_modularization/network/get_list_restaurant_use_case.dart';
-
+import 'package:flutter_modularization/domain/usecase/get_list_restaurant_use_case.dart';
 import 'get_list_restaurant_event.dart';
 import 'get_list_restaurant_state.dart';
 

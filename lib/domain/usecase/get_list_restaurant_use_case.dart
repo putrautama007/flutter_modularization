@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 
-import 'restaurant_list_entity.dart';
-import 'restaurant_repository.dart';
+import '../entity/restaurant_list_entity.dart';
+import '../repository/restaurant_repository.dart';
 
 abstract class GetListRestaurantUseCase {
   Future<RestaurantListEntity> getListRestaurant();
