@@ -1,12 +1,12 @@
-import 'package:dio/dio.dart';
+import 'package:data/data/datasource/movie_remote_data_source.dart';
+import 'package:data/data/mapper/movie_mapper.dart';
+import 'package:data/data/repository/movie_repository_impl.dart';
+import 'package:dependencies/dio/dio.dart';
+import 'package:dependencies/provider/provider.dart';
+import 'package:domain/domain/usecase/get_movie_usecase.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/data/datasource/movie_remote_data_source.dart';
-import 'package:flutter_modularization/data/mapper/movie_mapper.dart';
-import 'package:flutter_modularization/data/repository/movie_repository_impl.dart';
-import 'package:flutter_modularization/domain/usecase/get_movie_usecase.dart';
-import 'package:provider/provider.dart';
-import 'presentation/page/movie_page.dart';
-import 'presentation/provider/movie_list_notifier.dart';
+import 'package:presentation/presentation/page/movie_page.dart';
+import 'package:presentation/presentation/provider/movie_list_notifier.dart';
 
 void main() {
   runApp(const MyApp());
