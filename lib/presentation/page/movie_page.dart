@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
-import 'package:flutter_modularization/provider/movie_list_notifier.dart';
-import 'package:flutter_modularization/widget/movie_card.dart';
+import 'package:flutter_modularization/domain/entity/movie_entity.dart';
+import 'package:flutter_modularization/presentation/provider/movie_list_notifier.dart';
+import 'package:flutter_modularization/presentation/widget/movie_card.dart';
 import 'package:provider/provider.dart';
 
 class MoviePage extends StatelessWidget {
@@ -42,7 +42,7 @@ class MoviePage extends StatelessWidget {
         ));
   }
 
-  SizedBox movieList(List<Movie> movies) => SizedBox(
+  SizedBox movieList(List<MovieEntity> movies) => SizedBox(
         child: ListView.builder(
           shrinkWrap: true,
           itemBuilder: (context, index) {

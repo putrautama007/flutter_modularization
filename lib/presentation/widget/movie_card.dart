@@ -1,10 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
-import 'package:flutter_modularization/util/api_constants.dart';
+import 'package:flutter_modularization/core/util/api_constants.dart';
+import 'package:flutter_modularization/domain/entity/movie_entity.dart';
 
 class MovieCard extends StatelessWidget {
-  final Movie movie;
+  final MovieEntity movie;
 
   const MovieCard(this.movie, {Key? key}) : super(key: key);
 
@@ -45,7 +45,7 @@ class MovieCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      movie.title ?? '-',
+                      movie.title,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
@@ -56,7 +56,7 @@ class MovieCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      movie.overview ?? '-',
+                      movie.overview,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
