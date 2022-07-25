@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
+import 'package:flutter_modularization/data/model/movie_model.dart';
 import 'package:flutter_modularization/util/api_constants.dart';
 
 class MovieRemoteDataSource {

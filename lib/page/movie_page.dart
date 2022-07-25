@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
+import 'package:flutter_modularization/data/model/movie_model.dart';
 import 'package:flutter_modularization/provider/movie_list_notifier.dart';
 import 'package:flutter_modularization/widget/movie_card.dart';
 import 'package:provider/provider.dart';

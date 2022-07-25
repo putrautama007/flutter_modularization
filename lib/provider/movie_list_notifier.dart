@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/datasource/movie_remote_data_source.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
+import 'package:flutter_modularization/data/datasource/movie_remote_data_source.dart';
+import 'package:flutter_modularization/data/model/movie_model.dart';
 
 enum RequestState { empty, loading, loaded, noData, error }
 

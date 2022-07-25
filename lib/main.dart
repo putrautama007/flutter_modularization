@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/datasource/movie_remote_data_source.dart';
+import 'package:flutter_modularization/data/datasource/movie_remote_data_source.dart';
 import 'package:flutter_modularization/page/movie_page.dart';
 import 'package:flutter_modularization/provider/movie_list_notifier.dart';
 import 'package:provider/provider.dart';

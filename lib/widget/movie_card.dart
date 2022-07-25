@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modularization/model/movie_model.dart';
+import 'package:flutter_modularization/data/model/movie_model.dart';
 import 'package:flutter_modularization/util/api_constants.dart';
 
 class MovieCard extends StatelessWidget {
