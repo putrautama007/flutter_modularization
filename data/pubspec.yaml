@@ -12,10 +12,12 @@ dependencies:
     sdk: flutter
   core:
     path: ../core
-  dependencies:
-    path: ../dependencies
   domain:
     path: ../domain
+  dependencies:
+    git:
+      url: https://github.com/putrautama007/modular-package.git
+      path: dependencies
 
 dev_dependencies:
   flutter_test:
